@@ -47,7 +47,7 @@ while len(check(headlines, words))>=1:
         print('Buying...')
         import robin_stocks
         login=robin_stocks.login('robinhood user','robinhood pass') #you will have to 2FA verify when this is first used
-#makecode-> #robin_stocks.orders.order_sell_market('MRNA', 2, timeInForce='gtc', extendedHours=False)       
+        robin_stocks.orders.order_sell_market('MRNA', 2, timeInForce='gtc', extendedHours=False)       
         
     elif answer =="no":
             print('trade aborted')
@@ -77,7 +77,7 @@ else:
             print('Selling...')
             import robin_stocks
             login=robin_stocks.login('robinhood user','robinhood pass')
-#makecode-> #robin_stocks.orders.order_sell_market('MRNA', 2, timeInForce='gtc', extendedHours=False) 
+            robin_stocks.orders.order_sell_market('MRNA', 2, timeInForce='gtc', extendedHours=False) 
         elif answer =="no":
             print('trade aborted')
         else:
